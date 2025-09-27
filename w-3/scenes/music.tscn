@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch4emutdqks34"]
+
+[ext_resource type="AudioStream" uid="uid://bku0dtl8t0xfj" path="res://brackeys_platformer_assets/music/.mp3" id="1_05ggv"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_05ggv")
+volume_db = -12.0
+autoplay = true
+bus = &"music"
