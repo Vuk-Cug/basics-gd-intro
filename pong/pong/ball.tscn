@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxevymji3t5c0"]
+
+[ext_resource type="Script" uid="uid://vb0r7o4cxsxo" path="res://ball.gd" id="1_41u45"]
+[ext_resource type="Texture2D" uid="uid://c1fxntiwpytpf" path="res://2D Gore UI/Gauge_Stomach_Empty.png" id="1_x8fbi"]
+[ext_resource type="AudioStream" uid="uid://bc1bn3qi1j17v" path="res://2D Gore UI/sfx.mp3" id="3_ktgx5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41u45"]
+size = Vector2(16.63, 16.63)
+
+[node name="ball" type="RigidBody2D" groups=["ball"]]
+collision_layer = 2
+gravity_scale = 0.0
+script = ExtResource("1_41u45")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_x8fbi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6.735, 6.735)
+shape = SubResource("RectangleShape2D_41u45")
+
+[node name="sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ktgx5")
+volume_db = -5.0
+max_polyphony = 3

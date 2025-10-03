@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b61bi13bbrssv"]
+
+[ext_resource type="Script" uid="uid://bcn4eeapxj40a" path="res://paddle_1/paddle_1.gd" id="1_4lw3v"]
+[ext_resource type="Texture2D" uid="uid://n123y6b3m2ca" path="res://2D Gore UI/Button_Backbone.png" id="2_mc750"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqcma"]
+size = Vector2(600, 100)
+
+[node name="paddle1" type="CharacterBody2D"]
+script = ExtResource("1_4lw3v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_mc750")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_cqcma")

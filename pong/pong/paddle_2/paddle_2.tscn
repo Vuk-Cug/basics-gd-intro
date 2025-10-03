@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://byvy8w58ljr37"]
+
+[ext_resource type="Script" uid="uid://b8bmwk8tuspna" path="res://paddle_2/paddle_2.gd" id="1_0y01n"]
+[ext_resource type="Texture2D" uid="uid://dwemnhiqf0xrs" path="res://2D Gore UI/Button_Zombie_Pressed.png" id="2_0y01n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqcma"]
+size = Vector2(600, 100)
+
+[node name="paddle2" type="CharacterBody2D"]
+script = ExtResource("1_0y01n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-25.41, 0)
+rotation = 1.5707964
+scale = Vector2(0.466, 0.466)
+texture = ExtResource("2_0y01n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_cqcma")
