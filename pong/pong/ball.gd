@@ -5,9 +5,11 @@ var speed  = 500.0
 
 var velocity
 func _ready() -> void:
+	#randomizes the seed
 	randomize()
 	var dir = randi_range(0, 1)
 	if dir: 
+		#making the ball go in different direction each respawn
 		velocity= Vector2(1000,0).rotated(deg_to_rad(randf_range(-45, 45)))
 	else: 
 		velocity= Vector2(1000,0).rotated(deg_to_rad(randf_range(135, 225)))
@@ -20,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	if collision_info:
 		velocity.y +=randf_range(-100,100)
 		velocity= velocity.bounce(collision_info.get_normal())
+		#pitches the SFX of a hit
 		sfx.pitch_scale = randf_range(0.8, 1.2)
 		sfx.play()
 		speed += 100
