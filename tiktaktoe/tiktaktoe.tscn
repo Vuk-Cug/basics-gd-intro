@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://cs1wxyhmt4i6c"]
+
+[ext_resource type="Script" uid="uid://bfks4ovtse2gx" path="res://tiktaktoe.gd" id="1_u5gjk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_858xu"]
+bg_color = Color(0.55706495, 0.5809704, 0.7980209, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6386325, 0.8062119, 0.74864626, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5gjk"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Theme" id="Theme_jlqsb"]
+default_base_scale = 500.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlqsb"]
+bg_color = Color(0.5568628, 0.5803922, 0.79607844, 1)
+
+[node name="Panel" type="Panel"]
+custom_minimum_size = Vector2(720, 720)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_858xu")
+script = ExtResource("1_u5gjk")
+
+[node name="bg" type="Panel" parent="."]
+custom_minimum_size = Vector2(492, 492)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -246.0
+offset_top = -246.0
+offset_right = 246.0
+offset_bottom = 246.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u5gjk")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Button1" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button3" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button4" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button5" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button6" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button7" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button8" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[node name="Button9" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_jlqsb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jlqsb")
+
+[connection signal="pressed" from="GridContainer/Button1" to="." method="_on_button_pressed" binds= ["Button1"]]
+[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_button_pressed" binds= ["Button2"]]
+[connection signal="pressed" from="GridContainer/Button3" to="." method="_on_button_pressed" binds= ["Button3"]]
+[connection signal="pressed" from="GridContainer/Button4" to="." method="_on_button_pressed" binds= ["Button4"]]
+[connection signal="pressed" from="GridContainer/Button5" to="." method="_on_button_pressed" binds= ["Button5"]]
+[connection signal="pressed" from="GridContainer/Button6" to="." method="_on_button_pressed" binds= ["Button6"]]
+[connection signal="pressed" from="GridContainer/Button7" to="." method="_on_button_pressed" binds= ["Button7"]]
+[connection signal="pressed" from="GridContainer/Button8" to="." method="_on_button_pressed" binds= ["Button8"]]
+[connection signal="pressed" from="GridContainer/Button9" to="." method="_on_button_pressed" binds= ["Button9"]]
