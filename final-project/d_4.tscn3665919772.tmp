@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3w5vjtqv5r28"]
+
+[ext_resource type="Script" uid="uid://d15fyjjm6s76x" path="res://node_2d.gd" id="1_tajl0"]
+[ext_resource type="Texture2D" uid="uid://cv62gqmgylkvy" path="res://Borna.jpg" id="2_y7wgn"]
+
+[node name="levels" type="Node2D"]
+script = ExtResource("1_tajl0")
+
+[node name="compass" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("2_y7wgn")
+
+[connection signal="pressed" from="compass" to="." method="_on_compass_pressed"]

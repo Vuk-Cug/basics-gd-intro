@@ -1,14 +1,77 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3w5vjtqv5r28"]
+[gd_scene load_steps=8 format=3 uid="uid://d3w5vjtqv5r28"]
 
-[ext_resource type="Script" uid="uid://d15fyjjm6s76x" path="res://node_2d.gd" id="1_tajl0"]
-[ext_resource type="Texture2D" uid="uid://cv62gqmgylkvy" path="res://Borna.jpg" id="2_y7wgn"]
+[ext_resource type="Script" uid="uid://d15fyjjm6s76x" path="res://d_4.gd" id="1_tajl0"]
+[ext_resource type="Texture2D" uid="uid://q7w5aoixvhcb" path="res://compass.png" id="2_s5a2s"]
+[ext_resource type="Texture2D" uid="uid://ca1df1wfobahr" path="res://compass_arrow.png" id="3_deele"]
+[ext_resource type="Texture2D" uid="uid://nexyq4q1qfvn" path="res://compass_arrow1.png" id="4_ma5p6"]
+[ext_resource type="Texture2D" uid="uid://cqalgy007ph5t" path="res://compass_arrow2.png" id="5_s5a2s"]
+[ext_resource type="Texture2D" uid="uid://cogvj5x8qqj6t" path="res://compass_arrow3.png" id="6_deele"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_deele"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_deele")
+}],
+"loop": false,
+"name": &"1",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ma5p6")
+}],
+"loop": false,
+"name": &"2",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s5a2s")
+}],
+"loop": false,
+"name": &"3",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_deele")
+}],
+"loop": false,
+"name": &"4",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_deele")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ma5p6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s5a2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_deele")
+}],
+"loop": false,
+"name": &"Rolling",
+"speed": 10.0
+}]
 
 [node name="levels" type="Node2D"]
 script = ExtResource("1_tajl0")
 
 [node name="compass" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
-icon = ExtResource("2_y7wgn")
+offset_left = 77.0
+offset_top = 140.0
+offset_right = 285.0
+offset_bottom = 415.0
+icon = ExtResource("2_s5a2s")
+
+[node name="animated_sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(113, 277)
+sprite_frames = SubResource("SpriteFrames_deele")
+animation = &"Rolling"
 
 [connection signal="pressed" from="compass" to="." method="_on_compass_pressed"]

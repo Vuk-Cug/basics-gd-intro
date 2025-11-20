@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyj2uuyy0x7f6"]
+
+[ext_resource type="Texture2D" uid="uid://cw4p7w6scnrpg" path="res://tundra.jpg" id="1_i8owh"]
+
+[node name="1" type="Node2D"]
+
+[node name="Tundra" type="Sprite2D" parent="."]
+position = Vector2(707, 81)
+texture = ExtResource("1_i8owh")
