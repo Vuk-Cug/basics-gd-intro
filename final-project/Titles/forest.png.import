@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4y4fmtgaqy4y"
-path="res://.godot/imported/Borna2.jpg-6360af1744a39a77a74f52f5d476b081.ctex"
+uid="uid://bgq76ndkqlcj7"
+path="res://.godot/imported/forest.png-96a4dfc4eb1d88071d145f58f9149159.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_sprites/Borna2.jpg"
-dest_files=["res://.godot/imported/Borna2.jpg-6360af1744a39a77a74f52f5d476b081.ctex"]
+source_file="res://Titles/forest.png"
+dest_files=["res://.godot/imported/forest.png-96a4dfc4eb1d88071d145f58f9149159.ctex"]
 
 [params]
 

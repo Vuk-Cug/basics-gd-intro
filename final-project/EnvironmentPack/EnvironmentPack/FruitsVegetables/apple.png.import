@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b64a8ert28tnq"
-path="res://.godot/imported/Borna4.jpg-5a698b0f474b2e76ae0da1e25ce0d6d8.ctex"
+uid="uid://b2gxyyeiexh8w"
+path="res://.godot/imported/apple.png-7e5f7bfa6b08fb8aed867e42dba2593d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_sprites/Borna4.jpg"
-dest_files=["res://.godot/imported/Borna4.jpg-5a698b0f474b2e76ae0da1e25ce0d6d8.ctex"]
+source_file="res://EnvironmentPack/EnvironmentPack/FruitsVegetables/apple.png"
+dest_files=["res://.godot/imported/apple.png-7e5f7bfa6b08fb8aed867e42dba2593d.ctex"]
 
 [params]
 

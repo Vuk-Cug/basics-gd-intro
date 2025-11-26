@@ -1,16 +1,16 @@
 [gd_scene load_steps=7 format=3 uid="uid://d3w5vjtqv5r28"]
 
-[ext_resource type="Texture2D" uid="uid://q7w5aoixvhcb" path="res://compass.png" id="2_s5a2s"]
-[ext_resource type="Texture2D" uid="uid://ca1df1wfobahr" path="res://compass_arrow.png" id="3_deele"]
-[ext_resource type="Texture2D" uid="uid://nexyq4q1qfvn" path="res://compass_arrow1.png" id="4_ma5p6"]
-[ext_resource type="Texture2D" uid="uid://cqalgy007ph5t" path="res://compass_arrow2.png" id="5_s5a2s"]
-[ext_resource type="Texture2D" uid="uid://cogvj5x8qqj6t" path="res://compass_arrow3.png" id="6_deele"]
+[ext_resource type="Texture2D" uid="uid://cu3bq7ta72ycb" path="res://compass_sprites/Compass.png" id="1_4qpdj"]
+[ext_resource type="Texture2D" uid="uid://18ack5vkx8lm" path="res://compass_sprites/Arrow.png" id="2_4qpdj"]
+[ext_resource type="Texture2D" uid="uid://cqbqmurg5p01a" path="res://compass_sprites/Arrow2.png" id="3_ma5p6"]
+[ext_resource type="Texture2D" uid="uid://dmld778a1spbp" path="res://compass_sprites/Arrow3.png" id="4_s5a2s"]
+[ext_resource type="Texture2D" uid="uid://btwqqoqfv06wx" path="res://compass_sprites/Arrow4.png" id="5_deele"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_deele"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_deele")
+"texture": ExtResource("2_4qpdj")
 }],
 "loop": false,
 "name": &"1",
@@ -18,7 +18,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ma5p6")
+"texture": ExtResource("3_ma5p6")
 }],
 "loop": false,
 "name": &"2",
@@ -26,7 +26,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_s5a2s")
+"texture": ExtResource("4_s5a2s")
 }],
 "loop": false,
 "name": &"3",
@@ -34,7 +34,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_deele")
+"texture": ExtResource("5_deele")
 }],
 "loop": false,
 "name": &"4",
@@ -42,18 +42,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_deele")
+"texture": ExtResource("2_4qpdj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ma5p6")
+"texture": ExtResource("3_ma5p6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_s5a2s")
+"texture": ExtResource("4_s5a2s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_deele")
+"texture": ExtResource("5_deele")
 }],
-"loop": false,
+"loop": true,
 "name": &"Rolling",
 "speed": 10.0
 }]
@@ -65,7 +65,8 @@ offset_left = 77.0
 offset_top = 140.0
 offset_right = 285.0
 offset_bottom = 415.0
-icon = ExtResource("2_s5a2s")
+icon = ExtResource("1_4qpdj")
+flat = true
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(113, 277)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqalgy007ph5t"
-path="res://.godot/imported/compass_arrow2.png-0ccae77411e401ee00c68ef636b73d33.ctex"
+uid="uid://c57qi32r5td50"
+path="res://.godot/imported/tundra.png-f413f3a49250e6ee276f4cd6b684919a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_arrow2.png"
-dest_files=["res://.godot/imported/compass_arrow2.png-0ccae77411e401ee00c68ef636b73d33.ctex"]
+source_file="res://Titles/tundra.png"
+dest_files=["res://.godot/imported/tundra.png-f413f3a49250e6ee276f4cd6b684919a.ctex"]
 
 [params]
 

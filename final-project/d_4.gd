@@ -11,21 +11,29 @@ var levels := ["forest", "tundra", "desert", "sea"]
 
 var current_roll : int
 
-func _on_compass_pressed() -> void:
+#i pressa da button, i getta da animation
+func _on_compass_pressed():
 	play_animation()
 	roll_dice()
 
-
 #when animation done
+func animation_finished() -> void:
+	wait_and_change_scene()
+
+
+
+
 #choose a random number between 1 and 4
 func roll_dice() -> void:
 	return randi_range(1, 4)
 
-	#load the scene for than number
 
+#compass animation
 func play_animation() -> void:
 	animated_sprite.play("Rolling")
 
+
+#wait before chaning the scene
 func wait_and_change_scene():
 	await get_tree().create_timer(1).timeout
 	if current_roll <2:

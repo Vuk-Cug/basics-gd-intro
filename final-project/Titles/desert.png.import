@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cogvj5x8qqj6t"
-path="res://.godot/imported/compass_arrow3.png-4cd32e8d8343bc3ccadac0e6db3cd994.ctex"
+uid="uid://c6fciw1wiavww"
+path="res://.godot/imported/desert.png-9839f5678131311a5432690a607272be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_arrow3.png"
-dest_files=["res://.godot/imported/compass_arrow3.png-4cd32e8d8343bc3ccadac0e6db3cd994.ctex"]
+source_file="res://Titles/desert.png"
+dest_files=["res://.godot/imported/desert.png-9839f5678131311a5432690a607272be.ctex"]
 
 [params]
 

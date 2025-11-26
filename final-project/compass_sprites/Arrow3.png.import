@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv62gqmgylkvy"
-path="res://.godot/imported/Borna.jpg-6c16117e2f4212a7d7b0012d43ce70d7.ctex"
+uid="uid://dmld778a1spbp"
+path="res://.godot/imported/Arrow3.png-faf1818ec19dba8fe375a4e37a85e9c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_sprites/Borna.jpg"
-dest_files=["res://.godot/imported/Borna.jpg-6c16117e2f4212a7d7b0012d43ce70d7.ctex"]
+source_file="res://compass_sprites/Arrow3.png"
+dest_files=["res://.godot/imported/Arrow3.png-faf1818ec19dba8fe375a4e37a85e9c6.ctex"]
 
 [params]
 

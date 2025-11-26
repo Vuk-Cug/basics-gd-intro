@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca1df1wfobahr"
-path="res://.godot/imported/compass_arrow.png-a022ce011609c1d61a0f140b550431a6.ctex"
+uid="uid://b6k2wgbknp8ja"
+path="res://.godot/imported/island.png-7684e1421ffbec5918ef13c292b32d0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://compass_arrow.png"
-dest_files=["res://.godot/imported/compass_arrow.png-a022ce011609c1d61a0f140b550431a6.ctex"]
+source_file="res://Titles/island.png"
+dest_files=["res://.godot/imported/island.png-7684e1421ffbec5918ef13c292b32d0f.ctex"]
 
 [params]
 
